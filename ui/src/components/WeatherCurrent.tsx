@@ -65,7 +65,7 @@ const WeatherCurrent: FunctionComponent<{ coordinates?: Coordinate; zipcode?: st
           </h5>
           <h1 className="text-6xl flex justify-center items-center">
             {weather?.temperature?.current || '-'}°
-            {weather?.conditions?.length ? <img src={weather?.conditions[0]?.icon} /> : ''}
+            {weather?.conditions?.length ? <img src={weather?.conditions[0]?.icon} alt='weather-icon' /> : ''}
           </h1>
           {weather ? (
             <>

@@ -58,7 +58,7 @@ const WeatherForecast: FunctionComponent<{ coordinates?: Coordinate; zipcode?: s
               <tr key={index} className="border-solid border-t-2 border-b-2 border-gray-300">
                 <td>{format(addDays(startDate, index + 1), 'EEEE')}</td>
                 <td className="border-1 border-gray-300 border-solid">
-                  {forecast?.conditions?.length ? <img src={forecast?.conditions[0]?.icon} /> : ''}
+                  {forecast?.conditions?.length ? <img src={forecast?.conditions[0]?.icon} alt="weather-icon" /> : ''}
                 </td>
                 <td className="text-white font-semibold capitalize">
                   {forecast?.conditions?.length ? forecast?.conditions[0]?.description : ''}

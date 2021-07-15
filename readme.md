@@ -4,8 +4,9 @@
 
 - Node v12+
 - Yarn
-- OpenWeatherApp Api Key
-
+- OpenWeatherApp Api Key \
+  `create a free account on OpenWeather to get an API key`
+  
 ## Install Dependencies
 
 ### `yarn`

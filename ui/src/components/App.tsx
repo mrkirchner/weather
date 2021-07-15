@@ -11,7 +11,7 @@ function App() {
   const [coordinates, setCoordinates] = useState<Coordinate>();
 
   const client = new ApolloClient({
-    uri: process.env.REACT_APP_GRAPHQL_API,
+    uri: process.env.REACT_APP_GRAPHQL_API || 'http://localhost:4000',
     cache: new InMemoryCache(),
   });
 
