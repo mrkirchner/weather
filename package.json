@@ -1,0 +1,20 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean --yes && rm -rf ./node_modules"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.2"
+  },
+  "workspaces": {
+    "packages": [
+      "ui",
+      "api"
+    ]
+  }
+}
